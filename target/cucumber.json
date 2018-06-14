@@ -1,0 +1,72 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "test login with valid input",
+        "description": "",
+        "id": "test-sample-login;test-login-with-valid-input;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 63057081,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i open webpage",
+            "match": {
+              "location": "beh.i_open_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1052296,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i give valid test and test@123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 13
+                },
+                {
+                  "val": "test@123",
+                  "offset": 22
+                }
+              ],
+              "location": "beh.i_give_valid_test_and_test(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7698,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i should see the home page",
+            "match": {
+              "location": "beh.i_should_see_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "test sample login",
+    "description": "",
+    "id": "test-sample-login",
+    "keyword": "Feature",
+    "uri": "sample.feature"
+  }
+]
